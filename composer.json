@@ -6,7 +6,6 @@
         "idir install",
         "idir installer"
     ],
-    "license": "",
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
