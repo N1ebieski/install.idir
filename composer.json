@@ -49,6 +49,22 @@
             "Tests\\": "tests/"
         }
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "D:\\Work\\laravel-icore\\packages/n1ebieski/icore",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "D:\\Work\\laravel-idir\\packages/n1ebieski/idir",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],    
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {

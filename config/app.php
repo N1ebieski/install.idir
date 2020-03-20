@@ -84,7 +84,7 @@ return [
     |
     */
 
-    'locale' => 'pl',
+    'locale' => env('APP_LANG', 'pl'),
 
     'locale_full' => env('APP_LANG_FULL', 'pl_PL.UTF-8'),
 
