@@ -36,11 +36,7 @@
         },
         "classmap": [
             "database/seeds",
-            "database/seeds/vendor/icore",
-            "database/seeds/vendor/idir",
-            "database/factories",
-            "database/factories/vendor/icore",
-            "database/factories/vendor/idir"
+            "database/factories"
         ]
     },
     "autoload-dev": {
