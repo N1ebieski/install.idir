@@ -12,18 +12,23 @@ let { CleanWebpackPlugin } = require('clean-webpack-plugin');
  |
  */
 
- mix.webpackConfig({
+mix.webpackConfig({
     plugins: [
-         new CleanWebpackPlugin({
-             verbose: true,
-             cleanOnceBeforeBuildPatterns: [
-                 'fonts/**',
-                 'css/vendor/idir/**',
-                 'js/vendor/idir/**'
-             ]
-         })
-    ]
- });
+        new CleanWebpackPlugin({
+            verbose: true,
+            cleanOnceBeforeBuildPatterns: [
+                'fonts/**',
+                'css/vendor/idir/**',
+                'js/vendor/idir/**'
+            ]
+        })
+    ],
+    resolve: {
+        alias: {
+            '~': path.resolve(__dirname, 'node_modules/')
+        }
+    }
+});
 
 mix.js('resources/js/vendor/idir/vendor/vendor.js', 'js/vendor/idir/vendor')
     .js('resources/js/vendor/idir/web/web.js', 'js/vendor/idir/web')
