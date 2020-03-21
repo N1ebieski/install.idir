@@ -32,7 +32,9 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/"
+            "App\\": "app/",
+            "N1ebieski\\ICore\\Seeds\\": "database/seeds/vendor/icore/",
+            "N1ebieski\\IDir\\Seeds\\": "database/seeds/vendor/idir/"
         },
         "classmap": [
             "database/seeds",
