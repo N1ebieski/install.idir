@@ -1,5 +1,5 @@
 {
-    "name": "n1ebieski/idir-install",
+    "name": "n1ebieski/install.idir",
     "type": "project",
     "description": "iDir installer.",
     "keywords": [
@@ -49,17 +49,21 @@
     "repositories": [
         {
             "type": "path",
-            "url": "D:\\Work\\laravel-icore\\packages/n1ebieski/icore",
+            "url": "D:\\Work\\icore\\packages/n1ebieski/icore",
             "options": {
                 "symlink": true
             }
         },
         {
             "type": "path",
-            "url": "D:\\Work\\laravel-idir\\packages/n1ebieski/idir",
+            "url": "D:\\Work\\idir\\packages/n1ebieski/idir",
             "options": {
                 "symlink": true
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/N1ebieski/laravel-jsvalidation"
         }
     ],    
     "minimum-stability": "dev",

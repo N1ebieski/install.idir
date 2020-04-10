@@ -13,7 +13,9 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'iDir'),
+    'name' => env('APP_NAME', 'iDir - nowoczesny katalog stron'),
+
+    'name_short' => env('APP_NAME_SHORT', 'iDir'),
 
     'desc' => env('APP_DESC'),
 

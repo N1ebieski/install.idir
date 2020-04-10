@@ -7,7 +7,7 @@ return [
      *
      * Supported: 'jsvalidation::bootstrap', 'jsvalidation::bootstrap4'
      */
-    'view' => 'icore::vendor.jsvalidation.bootstrap4',
+    'view' => 'jsvalidation::bootstrap4',
 
     /*
      * Default JQuery selector find the form to be validated.
@@ -39,4 +39,8 @@ return [
      */
     'remote_validation_field' => '_jsvalidation',
 
+    /*
+     * Whether to escape all validation messages with htmlentities.
+     */
+    'escape' => false
 ];
