@@ -26,13 +26,13 @@
         "jquery.easing": "^1.4.1",
         "jquery.tagsinput-revisited": "^2.0",
         "jscroll": "git+https://github.com/N1ebieski/jscroll.git",
-        "laravel-mix": "^5.0.1",
+        "laravel-mix": "^4.0",
         "lodash": "^4.17.13",
         "pickadate": "^3.6.2",
         "popper.js": "^1.16.1",
         "resolve-url-loader": "^3.1.0",
         "sass": "^1.26.1",
-        "sass-loader": "^8.0.0",
+        "sass-loader": "^7.0.0",
         "trumbowyg": "^2.21.0",
         "vue-template-compiler": "^2.6.11"
     }
