@@ -739,16 +739,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.0",
+            "version": "6.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5"
+                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5",
-                "reference": "dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/43ece0e75098b7ecd8d13918293029e555a50f82",
+                "reference": "43ece0e75098b7ecd8d13918293029e555a50f82",
                 "shasum": ""
             },
             "require": {
@@ -802,7 +802,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-12-07T18:20:45+00:00"
+            "time": "2019-12-23T11:57:10+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1778,12 +1778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/N1ebieski/icore.git",
-                "reference": "55967360cc93cff5be054be626bbb2114f578ced"
+                "reference": "673134597ea990b3fe777dca0b5fd3f234c6909c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/N1ebieski/icore/zipball/55967360cc93cff5be054be626bbb2114f578ced",
-                "reference": "55967360cc93cff5be054be626bbb2114f578ced",
+                "url": "https://api.github.com/repos/N1ebieski/icore/zipball/673134597ea990b3fe777dca0b5fd3f234c6909c",
+                "reference": "673134597ea990b3fe777dca0b5fd3f234c6909c",
                 "shasum": ""
             },
             "require": {
@@ -1792,7 +1792,7 @@
                 "fico7489/laravel-pivot": "^3.0",
                 "franzose/closure-table": "^5.1",
                 "guidocella/eloquent-insert-on-duplicate-key": "^2.0",
-                "guzzlehttp/guzzle": "6.5.0",
+                "guzzlehttp/guzzle": "^6.5",
                 "laravel/helpers": "^1.0",
                 "laravel/socialite": "^4.1",
                 "mews/purifier": "^3.1",
@@ -1842,7 +1842,7 @@
             "keywords": [
                 "iCore"
             ],
-            "time": "2020-04-14T21:45:16+00:00"
+            "time": "2020-04-15T10:33:29+00:00"
         },
         {
             "name": "n1ebieski/idir",
