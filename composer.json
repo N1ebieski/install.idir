@@ -50,7 +50,11 @@
         {
             "type": "vcs",
             "url": "https://github.com/N1ebieski/laravel-jsvalidation"
-        }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/N1ebieski/laravel-minify-html.git"
+        }        
     ],    
     "minimum-stability": "dev",
     "prefer-stable": true,
