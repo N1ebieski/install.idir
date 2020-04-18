@@ -64,3 +64,7 @@ mix.js('resources/js/vendor/idir/vendor/vendor.js', 'js/vendor/idir/vendor')
             }
         }        
     });
+
+if (mix.inProduction()) {
+    mix.version();
+}

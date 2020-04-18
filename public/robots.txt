@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /*?page=*
+Disallow: /*?*
+Disallow: /admin*
+Disallow: /login*
+Disallow: /logout
+Disallow: /register
+Disallow: /password*
+Disallow: /*search*
+Disallow: /thumbnails*
+
