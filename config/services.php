@@ -50,8 +50,8 @@ return [
             'url' => env('CASHBILL_TRANSFER_URL'),
             'service' => env('CASHBILL_TRANSFER_SERVICE'),
             'key' => env('CASHBILL_TRANSFER_KEY'),
-            'currency' => 'USD',
-            'lang' => 'EN'
+            'currency' => 'PLN',
+            'lang' => 'PL'
         ],
         'code_sms' => [
             'check_url' => env('CASHBILL_CODE_SMS_CHECK_URL'),
