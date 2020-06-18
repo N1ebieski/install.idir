@@ -56,14 +56,12 @@ return [
         'code_sms' => [
             'check_url' => env('CASHBILL_CODE_SMS_CHECK_URL'),
             'token' => env('CASHBILL_CODE_SMS_TOKEN'),
-            'currency' => 'PLN',
-            'lang' => 'PL'
+            'currency' => 'PLN'
         ],
         'code_transfer' => [
             'check_url' => env('CASHBILL_CODE_TRANSFER_CHECK_URL'),
             'url' => env('CASHBILL_CODE_TRANSFER_URL'),
-            'currency' => 'PLN',
-            'lang' => 'PL'
+            'currency' => 'PLN'
         ]
     ],
 
