@@ -53,7 +53,7 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/N1ebieski/laravel-minify-html.git"
+            "url": "https://github.com/N1ebieski/taggedFileCache.git"
         }        
     ],    
     "minimum-stability": "dev",
