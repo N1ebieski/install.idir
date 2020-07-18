@@ -14,6 +14,7 @@
         "@fortawesome/fontawesome-free": "^5.12.1",
         "bootstrap": "^4.4.1",
         "bootstrap-confirmation2": "^4.1.0",
+        "bootstrap-select": "^1.13.18",        
         "bootstrap-star-rating": "git+https://github.com/N1ebieski/bootstrap-star-rating.git",
         "browser-sync": "^2.26.7",
         "browser-sync-webpack-plugin": "^2.2.2",
