@@ -23,6 +23,7 @@
         "cross-env": "^7.0",
         "jquery": "^3.2",
         "jquery-googlemap": "git+https://github.com/N1ebieski/jQuery-Google-Map.git",
+        "jquery-lazy": "^1.7.10",        
         "jquery.cookie": "^1.4.1",
         "jquery.easing": "^1.4.1",
         "jquery.tagsinput-revisited": "^2.0",
