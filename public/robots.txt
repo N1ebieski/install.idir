@@ -8,7 +8,6 @@ Disallow: /register
 Disallow: /password*
 Disallow: /*search*
 Disallow: /thumbnails*
-Disallow: /import*
 
 Sitemap: storage/vendor/icore/sitemap/sitemap.xml
 Sitemap: storage/vendor/idir/sitemap/sitemap.xml
