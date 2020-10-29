@@ -66,6 +66,10 @@ return [
 
     'googlemap' => [
         'api_key' => env('GOOGLEMAP_API_KEY')
-    ]
+    ],
+
+    'gus' => [
+        'api_key' => env('GUS_API_KEY')
+    ]    
 
 ];
