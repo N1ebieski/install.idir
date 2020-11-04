@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /*?page=*
-Disallow: /*?*
+Disallow: /*?filter=*
 Disallow: /admin*
 Disallow: /login*
 Disallow: /logout
