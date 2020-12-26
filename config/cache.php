@@ -52,6 +52,11 @@ return [
             'path' => storage_path('framework/cache/data'),
         ],
 
+        'system' => [
+            'driver' => 'file',
+            'path' => storage_path('framework/cache/system')
+        ],
+
         'tfile' => [
             'driver' => 'tfile',
             'path'   => storage_path('framework/cache/data')
