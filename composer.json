@@ -53,6 +53,10 @@
         },
         {
             "type": "vcs",
+            "url": "https://github.com/N1ebieski/laravel-file-manager"
+        },        
+        {
+            "type": "vcs",
             "url": "https://github.com/N1ebieski/taggedFileCache.git"
         }        
     ],    

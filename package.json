@@ -36,6 +36,7 @@
         "sass": "^1.26.10",
         "sass-loader": "^7.0.0",
         "trumbowyg": "^2.21.0",
+        "vue-laravel-file-manager": "git+https://github.com/N1ebieski/vue-laravel-file-manager.git#semver:2.5.3+icore",
         "vue-template-compiler": "^2.6.11"
     }
 }
