@@ -30,6 +30,7 @@
         "jscroll": "git+https://github.com/N1ebieski/jscroll.git#semver:2.4.1+icore",
         "laravel-mix": "^4.0",
         "lodash": "^4.17.19",
+        "magnific-popup": "^1.1.0",       
         "pickadate": "^3.6.2",
         "popper.js": "^1.16.1",
         "resolve-url-loader": "^3.1.0",
