@@ -55,6 +55,36 @@ return [
             'visibility' => 'public',
         ],
 
+        'views' => [
+            'driver' => 'local',
+            'root' => base_path('resources/views')
+        ],
+
+        'lang' => [
+            'driver' => 'local',
+            'root' => base_path('resources/lang')
+        ],
+
+        'css' => [
+            'driver' => 'local',
+            'root' => public_path('css/custom')
+        ],
+
+        'js' => [
+            'driver' => 'local',
+            'root' => public_path('js/custom')
+        ],
+
+        'images' => [
+            'driver' => 'local',
+            'root' => public_path('images')
+        ],
+
+        'svg' => [
+            'driver' => 'local',
+            'root' => public_path('svg')
+        ],        
+
         's3' => [
             'driver' => 's3',
             'key' => env('AWS_ACCESS_KEY_ID'),
