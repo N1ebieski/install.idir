@@ -31,7 +31,7 @@ return [
      * List of disk names that you want to use
      * (from config/filesystems)
      */
-    'diskList' => ['public', 'views', 'lang', 'css', 'js', 'images', 'svg'],
+    'diskList' => ['public'],
 
     /**
      * Default disk for left manager
