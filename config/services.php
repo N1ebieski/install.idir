@@ -64,6 +64,17 @@ return [
         ]
     ],
 
+    'paypal' => [
+        'paypal_express' => [
+            'username' => env('PAYPAL_USERNAME'),
+            'password' => env('PAYPAL_PASSWORD'),
+            'signature' => env('PAYPAL_SIGNATURE'),
+            'sandbox' => env('PAYPAL_SANDBOX'),
+            'currency' => 'PLN',
+            'lang' => 'PL'
+        ]
+    ],
+
     'googlemap' => [
         'api_key' => env('GOOGLEMAP_API_KEY')
     ],
