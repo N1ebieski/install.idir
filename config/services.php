@@ -71,7 +71,9 @@ return [
             'signature' => env('PAYPAL_SIGNATURE'),
             'sandbox' => env('PAYPAL_SANDBOX'),
             'currency' => 'PLN',
-            'lang' => 'PL'
+            'lang' => 'PL',
+            'check_url' => env('PAYPAL_CHECK_URL'),
+            'sandbox_check_url' => env('PAYPAL_SANDBOX_CHECK_URL')
         ]
     ],
 

@@ -12,6 +12,9 @@ return [
         'storage/app/public/vendor/idir/temp' => [
             'deleteAllOlderThanMinutes' => 60,
         ],
+        'storage/app/public/vendor/icore/temp' => [
+            'deleteAllOlderThanMinutes' => 60,
+        ]        
     ],
 
     /*
