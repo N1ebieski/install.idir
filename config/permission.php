@@ -14,7 +14,7 @@ return [
          */
 
         // 'permission' => Spatie\Permission\Models\Permission::class,
-        'permission' => N1ebieski\IDir\Models\Permission::class,
+        'permission' => N1ebieski\ICore\Models\Permission::class,
 
         /*
          * When using the "HasRoles" trait from this package, we need to know which
