@@ -55,7 +55,6 @@ return [
         ],
         'code_sms' => [
             'check_url' => env('CASHBILL_CODE_SMS_CHECK_URL'),
-            'qr_url' => env('CASHBILL_CODE_SMS_QR_URL'),            
             'currency' => 'PLN'
         ],
         'code_transfer' => [
