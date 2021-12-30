@@ -30,26 +30,42 @@ mix.webpackConfig({
     }
 });
 
-mix.js('resources/js/vendor/idir/vendor/vendor.js', 'js/vendor/idir/vendor')
-    .js('resources/js/vendor/idir/web/web.js', 'js/vendor/idir/web')
-    .js('resources/js/vendor/idir/admin/admin.js', 'js/vendor/idir/admin')
-    .scripts([
-        'resources/js/vendor/icore/web/scripts/**/*.js',
-        'resources/js/vendor/idir/web/scripts/**/*.js'
+// Custom assets
+mix.js('resources/js/web/web.js', 'public/js/custom/web')
+    .js('resources/js/admin/admin.js', 'public/js/custom/admin')
+    .babel([
+        'resources/js/web/scripts/**/*.js'
+    ], 'public/js/custom/web/scripts.js')
+    .babel([
+        'resources/js/admin/scripts/**/*.js'
+    ], 'public/js/custom/admin/scripts.js')
+    .sass('resources/sass/web/web.scss',
+        'public/css/custom/web')
+    .sass('resources/sass/web/web-dark.scss',
+        'public/css/custom/web')        
+    .sass('resources/sass/admin/admin.scss',
+        'public/css/custom/admin')
+    .sass('resources/sass/admin/admin-dark.scss',
+        'public/css/custom/admin')
+    // iDir assets
+    .js('vendor/n1ebieski/idir/resources/js/vendor/vendor.js', 'js/vendor/idir/vendor')
+    .js('vendor/n1ebieski/idir/resources/js/web/web.js', 'js/vendor/idir/web')
+    .js('vendor/n1ebieski/idir/resources/js/admin/admin.js', 'js/vendor/idir/admin')
+    .babel([
+        'vendor/n1ebieski/idir/resources/js/web/scripts/**/*.js'
     ], 'public/js/vendor/idir/web/scripts.js')
-    .scripts([
-        'resources/js/vendor/icore/admin/scripts/**/*.js',
-        'resources/js/vendor/idir/admin/scripts/**/*.js'
-    ], 'public/js/vendor/idir/admin/scripts.js')
-    .sass('resources/sass/vendor/idir/vendor/vendor.scss',
+    .babel([
+        'vendor/n1ebieski/idir/resources/js/admin/scripts/**/*.js'
+    ], 'public/js/vendor/idir/admin/scripts.js') 
+    .sass('vendor/n1ebieski/idir/resources/sass/vendor/vendor.scss',
         'css/vendor/idir/vendor')
-    .sass('resources/sass/vendor/idir/web/web.scss',
+    .sass('vendor/n1ebieski/idir/resources/sass/web/web.scss',
         'css/vendor/idir/web')
-    .sass('resources/sass/vendor/idir/web/web-dark.scss',
+    .sass('vendor/n1ebieski/idir/resources/sass/web/web-dark.scss',
         'css/vendor/idir/web')
-    .sass('resources/sass/vendor/idir/admin/admin.scss',
+    .sass('vendor/n1ebieski/idir/resources/sass/admin/admin.scss',
         'css/vendor/idir/admin')
-    .sass('resources/sass/vendor/idir/admin/admin-dark.scss',
+    .sass('vendor/n1ebieski/idir/resources/sass/admin/admin-dark.scss',
         'css/vendor/idir/admin')
     .browserSync({
         proxy: 'https://localhost',
