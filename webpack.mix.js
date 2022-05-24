@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 let { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -25,6 +26,7 @@ mix.webpackConfig({
     ],
     resolve: {
         alias: {
+            'jquery': path.join(__dirname, 'node_modules/jquery/src/jquery'),             
             '~': path.resolve(__dirname, 'node_modules/')
         }
     }

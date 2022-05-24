@@ -1,10 +1,10 @@
 <?php
 
-namespace N1ebieski\IDir\Seeds;
+namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class ExampleSeeder extends Seeder
+class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
@@ -13,6 +13,6 @@ class ExampleSeeder extends Seeder
      */
     public function run()
     {
-        //
+        // $this->call(UsersTableSeeder::class);
     }
 }
