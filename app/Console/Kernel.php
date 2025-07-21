@@ -2,7 +2,9 @@
 
 namespace App\Console;
 
+use Illuminate\Support\Facades\Config;
 use Illuminate\Console\Scheduling\Schedule;
+use N1ebieski\IDir\ValueObjects\Thumbnail\Driver;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
@@ -18,8 +20,14 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('queue:work --daemon --stop-when-empty --tries=3')
-            ->withoutOverlapping();
+        $schedule->command('queue:work --daemon --stop-when-empty --tries=3')->withoutOverlapping();
+
+        /** @var Driver $driver */
+        $driver = Config::get('idir.dir.thumbnail.driver');
+
+        if ($driver->isEquals(Driver::Local)) {
+            $schedule->command('queue:work --queue=thumbnail --daemon --stop-when-empty --tries=3')->withoutOverlapping();
+        }
     }
 
     /**
