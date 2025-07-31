@@ -26,10 +26,17 @@ return [
             'HTML.Doctype'             => 'HTML 4.01 Transitional',
             'HTML.Allowed'             => 'div[style|class],b,strong,i,em,u,a[href|title|target|rel],ul[style],ol[style],li,p[style|class],br,span[style],img[width|height|alt|src],sub,sup,hr,h1,h2,h3,h4,h5,blockquote,del,table[style|class],thead[style|class],tbody[style|class],th[style|class|scope],tr[style|class],td[style|class|colspan]',
             'Attr.AllowedRel'          => 'nofollow',
-            'HTML.TargetNoreferrer'    => false,            
+            'HTML.TargetNoreferrer'    => false,
             'CSS.AllowedProperties'    => 'font,font-size,font-weight,font-style,font-family,text-decoration,padding-left,color,background-color,text-align',
             'AutoFormat.AutoParagraph' => true,
             'AutoFormat.RemoveEmpty'   => true,
+        ],
+        'html' => [
+            'HTML.Doctype'             => 'HTML 4.01 Transitional',
+            'HTML.Allowed'             => 'title,meta[name|content],div,b,strong,i,em,u,a[href|title|target|rel],ul,ol,li,p,br,span,img[alt|src],sub,sup,hr,h1,h2,h3,h4,h5,blockquote,del,table,thead,tbody,th,tr,td',
+            'AutoFormat.AutoParagraph' => false,
+            'AutoFormat.RemoveEmpty'   => true,
+            'Core.ConvertDocumentToFragment' => false
         ],
         'dir' => [
             'HTML.Doctype'             => 'HTML 4.01 Transitional',
@@ -50,6 +57,12 @@ return [
             'rev' => 1,
             'debug' => false,
             'elements' => [
+                ['title', 'Inline', 'Inline', 'Common'],
+                ['meta', 'Inline', 'Empty', 'Common', [
+                    'name'    => 'Text',
+                    'content' => 'Text',
+                ]],
+
                 // http://developers.whatwg.org/sections.html
                 ['section', 'Block', 'Flow', 'Common'],
                 ['nav',     'Block', 'Flow', 'Common'],
@@ -105,6 +118,7 @@ return [
         ],
         'custom_attributes' => [
             ['a', 'target', 'Enum#_blank,_self,_target,_top'],
+            ['meta', 'name', 'Enum#keywords,description', 'start'],
         ],
         'custom_elements' => [
             ['u', 'Inline', 'Inline', 'Common'],

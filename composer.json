@@ -8,11 +8,11 @@
     ],
     "require": {
         "php": "^8.0.2",
-        "guzzlehttp/guzzle": "^7.2",        
+        "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "n1ebieski/idir": "^10.0",
+        "n1ebieski/idir": "^11.0",
         "predis/predis": "^1.1"
     },
     "require-dev": {
@@ -28,11 +28,11 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/",                      
-            "N1ebieski\\ICore\\Database\\Factories\\": "database/factories/vendor/icore/",            
+            "Database\\Seeders\\": "database/seeders/",
+            "N1ebieski\\ICore\\Database\\Factories\\": "database/factories/vendor/icore/",
             "N1ebieski\\ICore\\Database\\Seeders\\": "database/seeders/vendor/icore/",
-            "N1ebieski\\IDir\\Database\\Factories\\": "database/factories/vendor/idir/",            
-            "N1ebieski\\IDir\\Database\\Seeders\\": "database/seeders/vendor/idir/" 
+            "N1ebieski\\IDir\\Database\\Factories\\": "database/factories/vendor/idir/",
+            "N1ebieski\\IDir\\Database\\Seeders\\": "database/seeders/vendor/idir/"
         }
     },
     "autoload-dev": {
@@ -48,12 +48,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/N1ebieski/laravel-file-manager"
-        },        
+        },
         {
             "type": "vcs",
             "url": "https://github.com/N1ebieski/taggedFileCache.git"
-        }        
-    ],    
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/N1ebieski/browsershot.git"
+        }
+    ],
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
@@ -61,7 +65,7 @@
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
-        ],         
+        ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
         ],
@@ -73,7 +77,7 @@
         "laravel": {
             "dont-discover": []
         }
-    },    
+    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
