@@ -101,6 +101,11 @@ return [
         'api_key' => env('GOOGLEMAP_API_KEY')
     ],
 
+    'pagepeeker_v3' => [
+        'api_key' => env('PAGEPEEKER_V3_API_KEY'),
+        'api_secret' => env('PAGEPEEKER_V3_API_SECRET')
+    ],
+
     'gus' => [
         'api_key' => env('GUS_API_KEY')
     ],
